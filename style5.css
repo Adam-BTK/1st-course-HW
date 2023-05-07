@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  ;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background-image: url(./img/background_img.jpg);
+  height: 735px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 77px;
+  align-items: center;
+}
+
+.search {
+  width: 288px;
+  height: 41px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: left;
+  outline: none;
+}
+
+.search::placeholder {
+  color: #FFFFFF;
+}
+
+.top__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.top__links {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.top__links:hover {
+  text-decoration: underline;
+}
+
+.top__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  margin-top: 64px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+
+.top__motto {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.top__content_link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.for {
+  padding-top: 64px;
+}
+
+.for__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.for__content {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 32px;
+}
+
+.for__item {
+  height: 415px;
+  grid-column: span 4;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.for__item_big {
+  grid-column: span 6;
+}
+
+.for__item1 {
+  background-image: url(./img/item-1.jpg);
+}
+
+.for__item2 {
+  background-image: url(./img/item-2.jpg);
+}
+
+.for__item3 {
+  background-image: url(./img/item-3.jpg);
+}
+
+.for__item4 {
+  background-image: url(./img/item-4.jpg);
+}
+
+.for__item5 {
+  background-image: url(./img/item-5.jpg);
+}
