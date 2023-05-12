@@ -29,6 +29,7 @@ a {
   flex-wrap: wrap;
   height: 77px;
   align-items: center;
+  border-bottom: 1px solid white;
 }
 .top__search {
   width: 288px;
@@ -313,4 +314,94 @@ a {
   font-size: 15px;
   line-height: 18px;
   color: #000000;
+}
+
+.top-catalog {
+  background-image: url(./img/catalog_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.top-catalog .top_catalog__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 77px;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.top-catalog .top_catalog__search {
+  width: 288px;
+  height: 41px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: left;
+  outline: none;
+}
+.top-catalog .top_catalog__search::-moz-placeholder {
+  color: #ffffff;
+}
+.top-catalog .top_catalog__search::placeholder {
+  color: #ffffff;
+}
+.top-catalog .top_catalog__nav {
+  display: flex;
+  gap: 32px;
+}
+.top-catalog .top_catalog__links {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.top-catalog .top_catalog__links:hover {
+  text-decoration: underline;
+}
+.top-catalog .top_catalog__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  color: #ffffff;
+  padding-top: 127px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  align-items: center;
+}
+
+.catalog__links {
+  display: flex;
+  gap: 20px;
+  width: 288px;
+}
+
+.catalog__select-opt {
+  border: 1px solid #C4C4C4;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 288px;
+  height: 41px;
+  box-sizing: border-box;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.catalog-for {
+  padding-top: 40px;
 }/*# sourceMappingURL=style5.css.map */
