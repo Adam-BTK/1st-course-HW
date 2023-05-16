@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -32,6 +32,7 @@
     padding-right: 32px;
     text-align: left;
     outline: none;
+    box-sizing: border-box;
 
     &::placeholder {
       color: $main-color;
@@ -42,7 +43,7 @@
     display: flex;
     gap: 32px;
   }
-  
+
   &__links {
     font-style: normal;
     font-weight: 400;
@@ -54,13 +55,13 @@
       text-decoration: underline;
     }
   }
-    
+
   &__content {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
-  
+
   &__title {
     margin-top: 64px;
     font-style: normal;
@@ -68,8 +69,9 @@
     font-size: 64px;
     line-height: 70px;
     color: $main-color;
+    max-width: 792px;
   }
-  
+
   &__motto {
     font-style: normal;
     font-weight: 400;
@@ -77,7 +79,7 @@
     line-height: 32px;
     color: $main-color;
   }
-  
+
   &__content_link {
     font-style: normal;
     font-weight: 400;
@@ -101,14 +103,14 @@
     text-align: center;
     color: #000000;
   }
-  
+
   &__content {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
     margin-top: 32px;
   }
-  
+
   &__item {
     height: 415px;
     grid-column: span 4;
@@ -121,27 +123,27 @@
     justify-content: center;
     color: $main-color;
   }
-  
+
   &__item_big {
     grid-column: span 6;
   }
-  
+
   &__item1 {
     background-image: url(./img/item-1.jpg);
   }
-  
+
   &__item2 {
     background-image: url(./img/item-2.jpg);
   }
-  
+
   &__item3 {
     background-image: url(./img/item-3.jpg);
   }
-  
+
   &__item4 {
     background-image: url(./img/item-4.jpg);
   }
-  
+
   &__item5 {
     background-image: url(./img/item-5.jpg);
   }
@@ -151,18 +153,18 @@
   padding-top: 64px;
 
   &__content {
-    padding-top: 22px;
+    padding-top: 32px;
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
   }
-  
+
   &__product {
     display: flex;
     flex-direction: column;
     width: 378px;
   }
-  
+
   &__title {
     font-style: normal;
     font-weight: 600;
@@ -172,7 +174,7 @@
     align-items: center;
     color: #000000;
   }
-  
+
   &__heading {
     font-style: normal;
     font-weight: 500;
@@ -182,7 +184,7 @@
     margin-top: 10px;
     margin-bottom: 9px;
   }
-  
+
   &__text {
     font-style: normal;
     font-weight: 400;
@@ -191,12 +193,12 @@
     color: #888888;
     padding-bottom: 12px;
   }
-  
+
   &__prices {
     display: flex;
     gap: 32px;
   }
-  
+
   &__price {
     font-style: normal;
     font-weight: 500;
@@ -204,7 +206,7 @@
     line-height: 29px;
     color: #050505;
   }
-  
+
   &__price-sale {
     font-style: normal;
     font-weight: 500;
@@ -213,9 +215,9 @@
     text-decoration-line: line-through;
     color: #888888;
   }
-  
+
   &__link {
-    padding-top: 39px;
+    padding-top: 9px;
     padding-bottom: 64px;
     font-style: normal;
     font-weight: 400;
@@ -244,18 +246,18 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
+
   &__info {
     display: flex;
     gap: 129px;
   }
-  
+
   &__item {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-  
+
   &__link {
     font-style: normal;
     font-weight: 500;
@@ -267,25 +269,25 @@
       text-decoration: underline;
     }
   }
-  
+
   &__contacts {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-  
+
   &__icons {
     display: flex;
     gap: 20px;
   }
-  
+
   &__form {
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: center;
   }
-  
+
   &__text {
     margin-bottom: 4px;
     font-style: normal;
@@ -295,7 +297,7 @@
     color: #000000;
     font-family: 'Roboto';
   }
-  
+
   &__email {
     background: $main-color;
     border: 1px solid #C4C4C4;
@@ -314,8 +316,8 @@
       color: #C4C4C4;
       outline: none;
     }
-  }  
-  
+  }
+
   &__button {
     background: rgba(222, 215, 215, 0.41);
     border: 1px solid $main-color;
@@ -334,7 +336,7 @@
 @import 'catalog';
 //Каталог 
 
-.top-content{
+.top-content {
   background-image: url(./img/catalog_bg.jpg);
   height: 400px;
   background-position: center;
@@ -343,12 +345,12 @@
 
 }
 
-.top__title_catalog{
+.top__title_catalog {
   padding-top: 127px;
   margin-top: 0;
 }
 
-.catalog-nav{
+.catalog-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -356,7 +358,7 @@
   padding-top: 64px;
 }
 
-.bread-crumbs-link{
+.bread-crumbs-link {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -364,11 +366,11 @@
   color: #000000;
 }
 
-.bread-crumbs-link:hover{
+.bread-crumbs-link:hover {
   text-decoration: underline;
 }
 
-.bread-crumbs-link:not(:last-child)::after{
+.bread-crumbs-link:not(:last-child)::after {
   content: '/';
   padding-left: 10px;
   padding-right: 10px;
@@ -381,17 +383,17 @@
 .select {
   position: relative;
   width: 288px;
-  height: 41px;  
+  height: 41px;
 }
 
 .select select {
   display: block;
-  width: 100%; 
+  width: 100%;
   padding: 10px;
   padding-left: 14px;
   padding-right: 22px;
-  background: none; 
-  border: 1px solid #ccc; 
+  background: none;
+  border: 1px solid #ccc;
   border-radius: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -418,9 +420,10 @@
   margin-top: -3px;
 }
 
-.catalog-product-box{
+.catalog-product-box {
   padding-top: 41px;
 }
 
 // Корзина
-@import 'cart'
+@import 'cart';
+@import 'tablet';
