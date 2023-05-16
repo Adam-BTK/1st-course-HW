@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main project tst</title>
+  <title>Каталог</title>
   <link rel="stylesheet" href="style5.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,35 +13,31 @@
 </head>
 
 <body>
-  <div class="top-catalog center">
-    <div class="top_catalog__header">
-      <a href="index5.html" class="top_catalog__logo"><img src="./img/logo.svg" alt="logo"></a>
-      <input type="Поиск" class="top_catalog__search" placeholder="Поиск">
-      <div class="top_catalog__nav">
-        <a class="top_catalog__links" href="#">Каталог</a>
-        <a class="top_catalog__links" href="#">Корзина</a>
+  <div class="top-content center">
+    <div class="top__header">
+      <a href="index5.html" class="top__logo"><img src="./img/logo.svg" alt="logo"></a>
+      <input type="Поиск" class="top__search" placeholder="Поиск">
+      <div class="top__nav">
+        <a class="top__links" href="#">Каталог</a>
+        <a class="top__links" href="#">Корзина</a>
       </div>
     </div>
-    <div class="top_catalog__content">
-      <h1 class="top_catalog__title">Каталог</h1>
-    </div>
+    <h1 class="top__title top__title_catalog">Каталог</h1>
   </div>
-  <nav class="catalog center">
-    <div class="catalog__links">
-      <a href="index5.html" class="catalog__link catalog__link_main">Главная</a>
-      <p class="catalog__dash"><img src="./img/catalog_dash.png" alt=""></p>
-      <a href="catalog.html" class="catalog__link">Каталог товаров</a>
-    </div>
-    <div class="catalog__select">
-      <select name="" id="" class="catalog__select-opt">
-        <option value="#">Порядок: сперва новые</option>
+  <div class="catalog-nav center">
+    <nav class="bread-crumbs">
+      <a class="bread-crumbs-link" href="index5.html">Главная</a>
+      <a class="bread-crumbs-link" href="catalog.html">Каталог товаров</a>
+    </nav>
+    <div class="select">
+      <select>
+          <option value="1">Сперва новые</option>
+          <option value="2">Сперва популярные</option>
+          <option value="3">Сперва дешевые</option>
       </select>
-      <img src="./img/select_triangle.png" alt="select">
-    </div>
-
-  </nav>
-  <section class="product-box center catalog-for">
-    <h2 class="product-box__title">Каталог товаров</h2>
+  </div>
+  </div>
+  <section class="product-box catalog-product-box center">    
     <div class="product-box__content">
       <div class="product-box__product">
         <a href="product.html" class="product-box__img"><img src="./img/product1.jpg" alt="product"></a>
